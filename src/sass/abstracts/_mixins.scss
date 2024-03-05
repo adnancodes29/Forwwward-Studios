@@ -1,0 +1,32 @@
+@mixin transition {
+    transition: all 1s ease;
+}
+
+@mixin normal-transition {
+    transition: all .5s ease;
+}
+
+
+@mixin fast-transition {
+    transition: all .3s ease;
+}
+
+@mixin spin {
+    animation: 15s spin linear infinite;
+}
+
+@mixin center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin full-width {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}

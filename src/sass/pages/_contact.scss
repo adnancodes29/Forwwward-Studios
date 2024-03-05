@@ -1,0 +1,58 @@
+.contact {
+    height: 100vh;
+    width: 100%;
+    padding-top: 10rem;
+    position: relative;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        display: flex;
+        align-items: center;
+        padding-top: 0rem;
+    }
+
+    & .gradient__container {
+        display: none;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            display: inline-block;
+            bottom: 0%;
+            right: 0%;
+        }
+    }
+
+    & .gradient-color {
+
+        &-1 {
+            top: 20%;
+            right: -75%;
+            background-color: #F466E6;
+            animation: gradient-1-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        &-2 {
+            top: 65%;
+            right: -15%;
+            background-color: #F7F4AE;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        &-3 {
+            top: 40%;
+            right: -15%;
+            background-color: #FB8686;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    }
+}   

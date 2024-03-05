@@ -1,0 +1,173 @@
+/* Hero Slider */
+
+.hero {
+    &__slider {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+
+        & .hero__slide--1,
+        & .hero__slide--2,
+        & .hero__slide--3,
+        & .hero__slide--4 {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100% !important;
+            width: 100% !important;
+            object-fit: cover;
+            @include normal-transition;
+        }
+    }
+}
+
+.line {
+    position: relative;
+    height: .4rem;
+    width: 100%;
+    background-color: var(--color-octonary);
+    margin: 0rem 2rem;
+
+    &--1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 33.3%;
+        height: .3rem;
+        background-color: transparent;
+        cursor: pointer;
+
+        &--work {
+            @extend .line--1;
+            width: 25%;
+        }
+    }
+
+    &--2 {
+        position: absolute;
+        left: 33.3%;
+        top: 0;
+        width: 33.3%;
+        height: .3rem;
+        background-color: transparent;
+        cursor: pointer;
+
+        &--work {
+            @extend .line--2;
+            left: 25%;
+            width: 25%;
+        }
+    }
+
+    &--3 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 33.3%;
+        height: .3rem;
+        background-color: transparent;
+        cursor: pointer;
+
+        &--work {
+            @extend .line--3;
+            left: 50%;
+            width: 25%;
+        }
+    }
+
+    &--4 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 25%;
+        height: .3rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    & .dragg {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: .4rem;
+        width: 33.3%;
+        background-color: var(--color-tertiary);
+        transition: all .25s ease;
+
+        &--work {
+            @extend .dragg;
+            width: 25%;
+        }
+    }
+}
+
+.glide {
+    @media only screen and(min-width: $tablet-media-query) {
+        width: calc(100% - 13rem) !important;
+        margin: 0% auto;
+    }
+
+    @media only screen and(min-width: $small-screen-query) {
+        width: 100% !important;
+    }
+}
+
+.centered-slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        width: 100%;
+        max-width: 114rem;
+        margin: 5rem auto 0rem auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media only screen and(min-width: $small-screen-query) {
+        padding: 0rem 3rem;
+    }
+
+    &__item {
+        background-color: var(--color-tertiary);
+        padding: 2.5rem 1rem;
+        height: 33.5rem;
+        width: 29.4rem;
+        position: relative;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: var(--color-octonary);
+        }
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 23%;
+            height: auto;
+        }
+
+        & .social-media-icon {
+            height: 3.5rem;
+            width: 3.5rem;
+
+        }
+
+        & .heading {
+            margin-bottom: 5rem;
+        }
+
+        & .arrow {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            height: auto;
+            width: 5rem;
+            fill: var(--color-quaternary);
+            transform: scale(0.4);
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.work {
+    &__container {
+        height: 100% !important;
+        width: 100% !important;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            top: 50%;
+            left: 0%;
+            transform: translateY(-50%);
+        }
+    }
+
+    & .gradient-color-1 {
+        top: 10%;
+        left: -20%;
+        background-color: #2D9690;
+        animation: gradient-5-scaleUp;
+        animation-delay: 4700ms;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 50em !important;
+            height: 50em !important;
+            top: 35%;
+            left: -45%;
+        }
+    }
+
+    & .gradient-color-2 {
+        top: 70%;
+        left: -30%;
+        background-color: #A7A1EB;
+        animation: gradient-5-scaleUp;
+        animation-delay: 4700ms;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 30em !important;
+            height: 30em !important;
+            top: 83%;
+            left: -45%;
+        }
+    }
+
+    & .gradient-color-3 {
+        top: 49%;
+        left: 14%;
+        background-color: #EF4E4E;
+        animation: gradient-5-scaleUp;
+        animation-delay: 4700ms;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 30em !important;
+            height: 30em !important;
+            top: 65%;
+            left: -15%;
+        }
+    }
+}
+
+.featured-works {
+    padding: 5rem 0rem;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        padding: 10rem 0rem;
+    }
+}
+
+.featured__work {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 1 ease;
+    animation: fadeIn 1s ease;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &.hidden {
+        display: none;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    &--left-img {
+        & .card__img {
+            order: 2;
+        }
+
+        & .card__content {
+            @media only screen and(min-width: $tablet-media-query) {
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    &--right-img {
+        & .card__img {
+            order: 0;
+        }
+    }
+
+    & .card__content {
+        @media only screen and(min-width: $tablet-media-query) {
+            padding-left: 2rem;
+        }
+    }
+}
+
+.we-can-help {
+    padding: 5rem 0;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        padding: 10rem 0rem;
+    }
+}

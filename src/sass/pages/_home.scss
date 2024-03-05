@@ -1,0 +1,310 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative; // delete if gradient not work
+
+    @media only screen and(min-width: $tablet-media-query) {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    & .gradient__container {
+        top: -5%;
+        left: -5%;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            top: 0%;
+            left: 0%;
+        }
+    }
+
+    & .gradient-color {
+        &-1 {
+            top: -30%;
+            left: -40%;
+            right: initial;
+            margin: auto;
+            background-color: #6E2D96;
+            animation: gradient-1-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                top: -55%;
+                left: -65%;
+            }
+        }
+    
+        &-2 {
+            top: 17%;
+            left: -35%;
+            background-color: #EBA1C0;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                top: 27%;
+                left: -11%;
+            }
+        }
+    
+        &-3 {
+            top: 30%;
+            left: 15%;
+            background-color: #CFA1F3;
+            animation: gradient-3-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+.digital-product-studio {
+    padding: 5rem 0rem;
+    position: relative;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        padding: 10rem 0rem;
+    }
+
+    & .gradient__container {
+        top: 0%;
+        right: 0%;
+    }
+
+    & .gradient-color-1 {
+        top: -20%;
+        right: 0%;
+        background-color: #F466E6;
+        animation: gradient-4-scaleUp;
+        animation-duration: 1000ms;
+        animation-delay: 4700ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+        
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 60em !important;
+            height: 60em !important;
+            top: -50%;
+            right: 5%;
+        }
+    }
+
+    & .gradient-color-2 {
+        top: 16%;
+        right: 20%;
+        background-color: #F7F4AE;
+        animation: gradient-4-scaleUp;
+        animation-duration: 1000ms;
+        animation-delay: 4700ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 40em !important;
+            height: 40em !important;
+            top: 0%;
+            right: 40%;
+        }
+    }
+
+    & .gradient-color-3 {
+        top: 0%;
+        right: 0%;
+        background-color: #FB8686;
+        animation: gradient-4-scaleUp;
+        animation-duration: 1000ms;
+        animation-delay: 4700ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 40em !important;
+            height: 40em !important;
+            top: -10%;
+        }
+    }
+}
+
+.card {
+    background-color: var(--color-tertiary);
+    padding: 3rem;
+
+    &--gray {
+        @extend .card;
+        background-color: transparent !important;
+
+        & .post-count-position {
+            display: inline-block;
+            margin-bottom: 3rem;
+            color: var(--color-tertiary);
+        }
+
+        @media only screen and(min-width: $tablet-media-query) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            padding: 0rem;
+        }
+
+
+        @media only screen and(min-width: $small-screen-query) {
+            height: 43.3rem;
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        margin-bottom: 3rem;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 55%;
+            margin-bottom: 0rem;
+        }
+
+        @media only screen and(min-width: $small-screen-query) {
+            height: 100%;
+
+            & img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    &__content {
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 45%;
+        }
+
+        @media only screen and(min-width: $small-screen-query) {
+            padding-left: 4.5rem !important;
+        }
+    }
+
+    & p {
+        padding: 1.3rem 0rem;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            padding: 2rem 0rem 3.5rem 0rem;
+        }
+    }
+}
+
+.remarkable-experiences {
+    padding: 5rem 0rem;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        padding: 10rem 0rem;
+    }
+
+    &-mobile {
+        @media only screen and(min-width: $tablet-media-query) {
+            display: none;
+        }
+    }
+
+    &-slider {
+        display: none;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            display: block;
+        }
+    }
+}
+
+.product-idea {
+    padding: 5rem 0rem;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        padding: 10rem 0rem;
+    }
+}
+
+.decentarlized-studio {
+    padding: 5rem 0rem;
+    position: relative;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        padding: 10rem 0rem;
+    }
+
+    & .gradient__container {
+        top: 10%;
+        right: 0%;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            left: 0%;
+        }
+    }
+
+    & .gradient-color-1 {
+        top: 0%;
+        left: 0%;
+        background-color: #2D9690;
+        animation: gradient-5-scaleUp;
+        animation-duration: 1000ms;
+        animation-delay: 4700ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 60em !important;
+            height: 60em !important;
+            top: -39%;
+            left: -60%;
+        }
+    }
+
+    & .gradient-color-2 {
+        top: 60%;
+        left: -10%;
+        background-color: #A7A1EB;
+        animation: gradient-5-scaleUp;
+        animation-duration: 1000ms;
+        animation-delay: 4700ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 20em !important;
+            height: 20em !important;
+            top: 70%;
+            left: -20%;
+        }
+    }
+
+    & .gradient-color-3 {
+        top: 35%;
+        left: 35%;
+        background-color: #EF4E4E;
+        animation: gradient-5-scaleUp;
+        animation-duration: 1000ms;
+        animation-delay: 4700ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+
+        @media only screen and(min-width: $tablet-media-query) {
+            width: 40em !important;
+            height: 40em !important;
+            top: 15%;
+            left: 7%;
+        }
+    }
+}

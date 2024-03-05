@@ -1,0 +1,273 @@
+.intro {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & .gradient__container {
+        @media only screen and(min-width: $tablet-media-query) {
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+
+        }
+    }
+
+    & .gradient-color {
+        &-1 {
+            top: -35%;
+            left: -25%;
+            margin: auto;
+            background-color: #FCA2F3;
+            animation: gradient-1-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                width: 60em !important;
+                height: 60em !important;
+                left: -10%;
+                top: -20%;
+            }
+        }
+    
+        &-2 {
+            top: 17%;
+            left: -22%;
+            background-color: #89D1A6;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                width: 30em !important;
+                height: 30em !important;
+                left: -10%;
+                top: 15%;
+            }
+        }
+    
+        &-3 {
+            top: 35%;
+            left: 0%;
+            background-color: #E8E8E8;
+            animation: gradient-3-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                width: 40em !important;
+                height: 40em !important;
+                left: 10%;
+                top: 10%;
+            }
+        }
+    }
+}
+
+.great-product,
+.what-we-do,
+.team,
+.connect,
+.next-generation {
+    padding: 5rem 0rem;
+
+    @media only screen and(min-width: $tablet-media-query) {
+        padding: 10rem 0rem;
+    }
+}
+
+.great-product {
+    position: relative;
+
+    & .gradient__container {
+        left: unset;
+        right: 0%;
+
+    }
+
+    & .gradient-color {
+        &-1 {
+            top: -10%;
+            right: 10%;
+            margin: auto;
+            background-color: #FF224A;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                width: 50em !important;
+                height: 50em !important;
+                left: 30%;
+                top: -40%;
+            }
+        }
+    
+        &-2 {
+            top: 30%;
+            right: 10%;
+            background-color: #717AD1;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                width: 50em !important;
+                height: 50em !important;
+                left: 20%;
+                top: 5%;
+            }
+        }
+    
+        &-3 {
+            top: 10%;
+            right: -5%;
+            background-color: #FCFCFC;
+            animation: gradient-3-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                width: 50em !important;
+                height: 50em !important;
+                left: 85%;
+                top: -5%;
+            }
+        }
+    }
+}
+
+.connect {
+    position: relative;
+
+    & .gradient-color {
+        &-1 {
+            top: -5%;
+            left: -30%;
+            margin: auto;
+            background-color: #B212EB;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    
+        &-2 {
+            top: 35%;
+            left: -35%;
+            background-color: #1EF1FF;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    
+        &-3 {
+            top: 20%;
+            left: 5%;
+            background-color: #A4A4A4;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+.next-generation {
+    position: relative;
+
+    & .gradient__container {
+        right: 0%;
+        left: initial;
+    }
+
+    & .gradient-color {
+        &-1 {
+            top: 0%;
+            right: -20%;
+            margin: auto;
+            background-color: #5BFF22;
+            animation: gradient-1-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                height: 30rem !important;
+                width: 30rem !important;
+            }
+        }
+    
+        &-2 {
+            top: 15%;
+            right: 10%;
+            background-color: #1EF1FF;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                height: 30rem !important;
+                width: 30rem !important;
+                top: 25%;
+                right: 5%;
+            }
+        }
+    
+        &-3 {
+            top: 20%;
+            right: -5%;
+            background-color: #B7B7B7;
+            animation: gradient-2-scaleUp;
+            animation-duration: 1000ms;
+            animation-delay: 4700ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+            @media only screen and(min-width: $tablet-media-query) {
+                height: 30rem !important;
+                width: 30rem !important;
+                top: 40%;
+                right: -25%;
+            }
+        }
+    }
+}
+
+#studio {
+    & .glide {
+        margin-top: 5rem;
+    }
+
+    & .glide__slide:nth-of-type(2n) {
+        margin-top: 3.5rem;
+    }
+
+    & .glide__slide a {
+        display: inline-block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,92 @@
+// Colors
+:root {
+    --color-primary: #191919;
+    --color-secondary: #F1F1F1;
+    --color-tertiary: #FFF;
+    --color-quaternary: #A1A1A1;
+    --color-quinary: #808285;
+    --color-senary: #F2F2F2;
+    --color-septenary: #333;
+    --color-octonary: #92A5A9;
+}
+
+body.light-theme {
+    background-color: var(--color-secondary);
+    @include fast-transition;
+}
+
+.light-theme {
+    @include fast-transition;
+    & .heading {
+        color: var(--color-primary);
+
+        &--quinary {
+            color: var(--color-octonary);
+        }
+    }
+
+    & .glide {
+        &__slide {
+            &--type {
+                color: var(--color-primary);
+            }
+
+            &__heading h2 {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    & .button {
+        &--link {
+            background-color: var(--color-primary);
+            color: var(--color-tertiary);
+
+            &:hover {
+                color: var(--color-tertiary);
+            }
+        }
+    }
+
+    & .card {
+        & .post-count-position {
+            color: var(--color-primary);
+        }
+    }
+
+    & .btn {
+        & span {
+            color: var(--color-primary);
+        }
+
+        & .circle {
+            border: 0.1rem solid var(--color-primary);
+        }
+    }
+
+    & .what-we-do {
+        & li {
+            color: var(--color-primary);
+        }
+    }
+
+    & .circle {
+        border: .1rem solid var(--color-primary);
+
+        & .arrow {
+            fill: var(--color-primary);
+        }
+
+        &:hover {
+            background-color: var(--color-primary) !important;
+
+            & .arrow {
+                fill: var(--color-secondary) !important;
+            }
+        }
+    }
+}
+
+// Media queries
+$tablet-media-query: 768px;
+$small-screen-query: 1024px;
